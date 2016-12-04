@@ -13,5 +13,7 @@ Processing is voornamelijk java maar ik denk dat het ook mogelijk is om andere t
 ## Eerste tryout
 
 Proberen importeren van TheMidiBus library en deze te gebruiken.
+* sketchbook is waar je processing folder is opgeslaan ( standaard is dit id je documenten )
+* een sketch is een stuk code dat je maakt. ( .pde )
 * Leren library importeren ( => problemen met het vinden van library)
 * Gebruik TheMidiBus
