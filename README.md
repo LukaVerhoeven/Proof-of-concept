@@ -17,4 +17,17 @@ Proberen importeren van TheMidiBus library en deze te gebruiken.
 * sketchbook is waar je processing folder is opgeslaan ( standaard is dit id je documenten )
 * een sketch is een stuk code dat je maakt. ( .pde )
 * Leren library importeren ( => problemen met het vinden van library)
-* Gebruik TheMidiBus
+
+## Shapes
+
+* create window: size(200,200);
+* create point: point( 50, 50);
+* create line: line(90,150,80,160);
+* create ellipse: ellipse(119,70,16,32);
+* create rectangle: rect(100,100,20,100);
+
+## Colors
+
+* fill: fill(0,0,255,127); => needs to be placed before creating a shape.
+* noStroke: noStroke(); => verwijderd de rand van een figuur.
+* stroke: stroke(v1, v2, v3, alpha); v1 = hue / v2 = saturation / v3 = brigthness
