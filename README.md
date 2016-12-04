@@ -1,5 +1,5 @@
-# Proof of conceptLuka Verhoeven
-## Logbook
+# Proof of concept Luka Verhoeven
+## Starten Project
 -Zoeken naar programma’s/software of via code visuals te maken <br />
 -Zoeken naar een programma / plugin / library die midi kan integreren <br />
 *	Kodelife ( coding tool )
@@ -8,3 +8,5 @@
 
 Veel midi library's die ik vond zijn outdated of bestaan zelfs gewoon niet meer. <br/>
 Ik ga voor Processing kiezen om dat hierover precies meer documentatie te vinden valt dan Kodelife.
+
+## Eerste tryout
