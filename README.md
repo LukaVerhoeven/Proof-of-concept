@@ -13,5 +13,5 @@ Processing is voornamelijk java maar ik denk dat het ook mogelijk is om andere t
 ## Eerste tryout
 
 Proberen importeren van TheMidiBus library en deze te gebruiken.
-* library importeren
+* Leren library importeren ( => problemen met het vinden van library)
 * Gebruik TheMidiBus
