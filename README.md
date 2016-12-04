@@ -5,6 +5,7 @@
 *	Kodelife ( coding tool )
 *	Processing ( coding tool ) valt te vergelijken met arduino.
 *	TheMidiBus ( midi library )
+* p5js.org library. javascript gebaseerd op processing voor web.
 
 Veel midi library's die ik vond zijn outdated of bestaan zelfs gewoon niet meer. <br/>
 Ik ga voor Processing kiezen om dat hierover precies meer documentatie te vinden valt dan Kodelife. <br/>
