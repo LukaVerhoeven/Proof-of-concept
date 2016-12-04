@@ -28,6 +28,6 @@ Proberen importeren van TheMidiBus library en deze te gebruiken.
 
 ## Colors
 
-* fill: fill(0,0,255,127); => needs to be placed before creating a shape.
+* fill: fill(0,0,255,127); => needs to be placed before creating a shape. (R G B A)
 * noStroke: noStroke(); => verwijderd de rand van een figuur.
 * stroke: stroke(v1, v2, v3, alpha); v1 = hue / v2 = saturation / v3 = brigthness
