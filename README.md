@@ -18,6 +18,10 @@ Proberen importeren van TheMidiBus library en deze te gebruiken.
 * een sketch is een stuk code dat je maakt. ( .pde )
 * Leren library importeren ( => problemen met het vinden van library)
 
+## logging
+
+*  println("test");
+
 ## Shapes
 
 * create window: size(200,200);
@@ -25,6 +29,7 @@ Proberen importeren van TheMidiBus library en deze te gebruiken.
 * create line: line(90,150,80,160);
 * create ellipse: ellipse(119,70,16,32);
 * create rectangle: rect(100,100,20,100);
+* create pie-diagram: arc(50, 50, 66, 66, 0, radians(angle));
 
 ## Colors
 
@@ -32,7 +37,40 @@ Proberen importeren van TheMidiBus library en deze te gebruiken.
 * noStroke: noStroke(); => verwijderd de rand van een figuur.
 * stroke: stroke(v1, v2, v3, alpha); v1 = hue / v2 = saturation / v3 = brigthness
 
-#functions
+## functions
 
 * Setup : Initialize objects.
 * Draw : Display/Draw objects.
+
+## text
+* textSize(30) : Size of the text textsize(int)
+* text(key, 20, 75) : text( string, width, height )
+* PFont f : create font variables
+* f = createFont("Arial",20,true): Initialize font
+* textFont(f): set font
+* textAlign(CENTER): align textAlign
+
+## key-code
+* keyCode == UP
+* keyCode == DOWN
+* key == CODED : Is used when key is not included is the ASCII table
+
+## keyboard
+
+* key : pressed key
+* keyPressed == true : Check if key is pressed
+* void keyReleased(){} :  function activate when keyreleased
+
+## start/stop
+* noLoop() : stops the program
+* loop()   : starts the program
+
+## movements
+* rotate(theta):
+* translate(width/2,height/2): Translate to center
+
+## int
+* random(12,36)
+
+## String
+* charAt(i) : gets a letter from a string
