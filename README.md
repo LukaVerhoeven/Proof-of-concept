@@ -20,7 +20,8 @@ Proberen importeren van TheMidiBus library en deze te gebruiken.
 
 ## logging
 
-*  println("test");
+* println("test");
+* printArray(south);
 
 ## Shapes
 
@@ -68,9 +69,22 @@ Proberen importeren van TheMidiBus library en deze te gebruiken.
 ## movements
 * rotate(theta):
 * translate(width/2,height/2): Translate to center
+* pushMatrix(); :replace or animate a shape between push and pop</br> 
+translate(30, 20); </br>
+fill(0);   </br>
+rect(0, 0, 50, 50);  </br>
+popMatrix();</br>
 
-## int
+## int / Math
 * random(12,36)
+* sin(2)
+* abs() : getallen absolute maken ( geen - )
 
 ## String
 * charAt(i) : gets a letter from a string
+
+## Arrays
+* create array: int[] x = { 50, 61, 83, 69, 71, 50, 29, 31, 17, 39 } Or spots = new Spot[numSpots];
+* arrayCopy(north, south): copies array north to south;
+* printArray(south) : prints an array;
+* float[] halve(float[] d) {}: array function;
