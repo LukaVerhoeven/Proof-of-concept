@@ -69,7 +69,7 @@ Proberen importeren van TheMidiBus library en deze te gebruiken.
 ## movements
 * rotate(theta):
 * translate(width/2,height/2): Translate to center
-* pushMatrix(); :replace or animate a shape between push and pop</br> 
+* pushMatrix(); //replace or animate a shape between push and pop</br> 
 translate(30, 20); </br>
 fill(0);   </br>
 rect(0, 0, 50, 50);  </br>
