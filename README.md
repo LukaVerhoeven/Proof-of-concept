@@ -69,7 +69,7 @@ Proberen importeren van TheMidiBus library en deze te gebruiken.
 ## movements
 * rotate(theta):
 * translate(width/2,height/2): Translate to center
-* pushMatrix(); //replace or animate a shape between push and pop</br> 
+* pushMatrix(); //replace or animate a shape between push and pop</br>
 translate(30, 20); </br>
 fill(0);   </br>
 rect(0, 0, 50, 50);  </br>
@@ -79,6 +79,7 @@ popMatrix();</br>
 * random(12,36)
 * sin(2)
 * abs() : getallen absolute maken ( geen - )
+* map(value, start1, stop1, start2, stop2): maps value( which is between start/stop1) to a value between start/stop 2
 
 ## String
 * charAt(i) : gets a letter from a string
@@ -88,3 +89,8 @@ popMatrix();</br>
 * arrayCopy(north, south): copies array north to south;
 * printArray(south) : prints an array;
 * float[] halve(float[] d) {}: array function;
+
+# TheMidiBus
+## Functions
+* void controllerChange(int channelIn, int numberIn, int valueIn){}; detects and retreives data when turning knobs.
+* void noteOn (int channelIn, int numberIn, int valueIn){}; detects and retreives data when touching keys.
