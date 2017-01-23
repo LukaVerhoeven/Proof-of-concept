@@ -25,7 +25,11 @@ float prevX;
 float prevY;
 int colorHue;
 int objectsize = 0;
+int connectWidth = 0;
+int connectcolor = 255;
+int fadeOutOpacity = 80;
 int randomVelocity = 0;
+int particleSize = 15;
 boolean redrawActive = true;
 boolean danceActive = false;
 
@@ -44,8 +48,9 @@ public void setup(){
 
 }
 public void draw(){
+
   //makes black square
-  fill(0,80);
+  fill(0,fadeOutOpacity);
   rect(0, 0, width, height);
 
   //THE SHAPE GENERATOR
@@ -61,6 +66,7 @@ public void draw(){
     float y = r * sin(a) + height/2;
     particles.add(new Particle(x,y,a,r));
     Particle part = particles.get(amount);
+
 
     if(redrawActive){
       part.redraw(x,y);
@@ -95,6 +101,18 @@ public void controllerChange(int channel, int number, int valueIn){
   }
   if(number==24){
     objectsize = PApplet.parseInt(map(valueIn, 0 , 127, 0, 1000));
+  }
+  if(number==25){
+    connectWidth = PApplet.parseInt(map(valueIn, 0 , 127, 0, 10));
+  }
+  if(number==26){
+    connectcolor = PApplet.parseInt(map(valueIn, 0 , 127, 0, 255));
+  }
+  if(number==27){
+    fadeOutOpacity = PApplet.parseInt(map(valueIn, 0 , 127, 80, 250));
+  }
+  if(number==28){
+    particleSize = PApplet.parseInt(map(valueIn, 0 , 127, 10, 30));
   }
 }
 public void noteOn (int channelIn, int numberIn, int valueIn){
@@ -132,7 +150,7 @@ class Particle{
   public void draw(){
     fill(colorHue, 255, 255);
     noStroke();
-    ellipse(x,y,15,15 );
+    ellipse(x,y,particleSize,particleSize );
   }
   public void redraw(float newX, float newY){
     x = newX;
@@ -143,8 +161,8 @@ class Particle{
 
   public void connect(){
     beginShape();
-    stroke(255);
-    strokeWeight(2);
+    stroke(connectcolor);
+    strokeWeight(connectWidth);
     vertex(prevX,prevY);
     vertex(x,y);
     endShape();
